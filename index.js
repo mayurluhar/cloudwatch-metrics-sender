@@ -4,7 +4,7 @@ const {getSystemData} = require('./systemState');
 // Function to make the POST API request
 async function makePostRequest() {
   let res = getSystemData();
-  const apiUrl = 'https://d3isb6tpgl.execute-api.us-east-1.amazonaws.com/dev/pushMetric'; // Replace with your API endpoint
+  const apiUrl = ''; // Replace with your API Gateway endpoint
   const postData = res; // API payload
   try {
     const response = await axios.post(apiUrl, postData);
